@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label fixed>Input 1</ion-label>
+    <ion-input type="num1" [(ngModel)]="input1"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label fixed>Input 2</ion-label>
+    <ion-input type="num2" [(ngModel)]="input2"></ion-input>
+  </ion-item>
+  <button ion-button (click)="calculate()">Calculate</button>
+  <div>{{result}}</div>
+</ion-content>
